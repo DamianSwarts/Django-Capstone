@@ -2,7 +2,7 @@
 
 This is a Django capstone project that showcases the skills and knowledge acquired in the Advanced Software Engineering course. It is a web application that allows users to view and interact with a fictional band.
 
-##Table of contents
+## Table of contents
 1. [Features](#features)
 2. [Installation](#installation)
 3. [Contributing](#contributing)
