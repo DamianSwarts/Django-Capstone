@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+                integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <title>Contact Us</title>
+        <style>
+            h1{
+                text-align:center;
+                font-family: Georgia;
+                color: rgb(128, 128, 128);
+                background-color: black;
+                padding:5px;
+            }
+            .row{
+                padding:5px;
+            }
+        </style>
+    </head>
+    <body> 
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Jumbotron class --> 
+                <div class="jumbotron">
+                    <h1 class="text-center">Contact Us</h1>
+                    <p><h3>Amapiano Legends' management and contact info.<br> We would love to hear from you!</h3></p>
+                </div>
+                    <p><strong><u>Email:</u></strong>   {{ contact_info.email }}</p>
+                    <p><strong><u>Phone:</u></strong>   {{ contact_info.phone }}</p>
+                    <p><strong><u>Address:</u></strong>   {{ contact_info.address }}</p>
+                    <!-- Btn class -->
+                    <br><br><p class="text-center"><a href="{% url 'band_app:home' %}" class="btn btn-primary">Back to home</a></p>
+            </div>
+        </div>
+        <p class="text-center"><a href="{% url 'logout' %}" class="btn btn-danger">Log out</a></p>
+    </body>
+</html>
